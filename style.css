@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family=Sixtyfour&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+html,body{
+    line-height: 1.4;
+    font-weight: 300;
+}
+.logo img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid black;
+}
+.navigation-box{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    /* background: seagreen; */
+}
+.navigation-box h1{
+    text-align: center;
+    margin: 10px;
+    font-size: 3em;
+    font-family: 'Sixtyfour', sans-serif;
+}
+.bar-icon{
+    /* margin: 0 auto; */
+    margin: 20px 20px;
+    font-size: 22px;
+}
+nav{
+    box-shadow: 5px 5px 5px rgba(1,1,1,0.1);
+    position: sticky;
+    top: 0;
+    margin-bottom: 30px;
+    background: #fff;
+    padding: 10px;
+}
+
+.container{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.hero{
+   display: flex;
+   gap: 150px;
+   justify-content: center;
+   align-items: center;
+}
+.hero-img img{
+    width: 380px;
+    border-radius: 50%;
+    height: 380px;
+    border: 2px solid black;
+    margin: 20px 20%;
+}
+.hero-cont{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.hero-cont h1{
+    font-size: 72px;
+    line-height: 1.2;
+    font-weight: 300;
+}
+button{
+    padding: 10px 15px;
+    border: none;
+    transition: 0.2s ease-in-out;
+}
+button:hover{
+    opacity: 0.8;
+    transition: 0.2s ease-in-out;
+}
+.explore-btn{
+    background-color: orange;
+    align-self: flex-start;
+}
+.tag{
+    background-color: rgb(5, 233, 5);
+    padding: 5px 3px;
+    color: #fff;
+    align-self: flex-start;
+}
+.features{
+    margin-top: 100px;
+    display: flex;
+    gap: 20px;
+    margin-bottom: 50px;
+    justify-content: center;
+}
+.feature:hover{
+    transition: 0.2s ease-in-out;
+    box-shadow: 5px 5px 5px rgba(1,1,1,0.1);
+}
+.features img{
+    width: 80px;
+    height: 80px;
+    margin-left: 20px;
+}
+.feature{
+    gap: 20px;
+    display: flex;
+    padding: 20px;
+    transition: 0.2s ease-in-out;
+}
+.features{
+    /* background-color: red; */
+    width: 80%;
+    margin-left: 10%;
+}
+.divider{
+    border: 2px solid black;
+    margin: 20px 0;
+}
+.menu{
+    display: flex;
+    gap: 50px;
+    margin: 50px 0;
+    flex-direction: column;
+    align-items: center;
+}
+.menu .tag{
+    align-self: center;
+}
+.our-menu{
+    display: grid;
+    gap: 10px;
+}
+.our-menu img{
+    border-radius: 10px;
+}
+footer{
+    background-color: aquamarine;
+}
+.logo img{
+    margin: 25px 50px;
+}
+.footer-box{
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.link-ist h3{
+    margin-bottom: 10px;
+    list-style: none;
+}
+.news-letter h3{
+    margin-bottom: 10px;
+    /* padding: 5px 40px; */
+}
+.link-list ul{
+    list-style: none;
+}
+.icon-box{
+    gap: 15px;
+    display: flex;
+    font-size: 25px;
+}
+footer p{
+    /* text-align: center; */
+    padding-bottom: 50px;
+    margin-left: 50px;
+    font-family: sans-serif;
+}
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+    .navigation-box h1{
+        font-size: 1em;
+        flex-direction: column;
+    }
+
+    .hero-img img {
+        margin: 0 auto;
+        width: 320px;
+        height: 310px;
+    }
+    .hero-cont{
+        gap: 10px;
+        padding: 10px 10px;
+        margin: 0;
+    }
+    .our-menu img{
+        height: 200px;
+        width: 350px;
+    }
+    .features{
+        display: flex;
+        flex-direction: column;
+    }
+    .footer-box{
+        flex-direction: column;
+    }
+    .logo img{
+        width: 50px;
+        height: 50px;
+        margin-left: 0;
+    }
+}
